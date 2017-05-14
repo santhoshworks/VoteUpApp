@@ -3,6 +3,7 @@ import React from 'react';
 import Home from './components/Home';
 import Chat from './components/Chat';
 import Splash from './components/Splash';
+import Login from './components/Login/Login';
 
 import {Platform} from 'react-native';
 
@@ -19,7 +20,7 @@ class App extends React.Component {
         //     </Router>
         // );
 
-        return <Splash/>;
+        return <Login />;
     }
 };
 
