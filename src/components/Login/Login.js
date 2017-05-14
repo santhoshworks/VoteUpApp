@@ -26,7 +26,7 @@ const styles = StyleSheet.create(
             alignItems: 'center'
         }, 
         loginContainer: {
-            justifyContent:'flex-start'
+            flexDirection:'row'
         }, 
         title: {
             color: 'white',
