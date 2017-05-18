@@ -2,8 +2,23 @@ import React from 'react';
 
 import { View, Text, StyleSheet, Image } from 'react-native';
 import LoginForm from './LoginForm';
+import * as firebase from "firebase";
 
 class Login extends React.Component {
+ constructor(props){
+     super(props);
+     let config = {
+        apiKey: "AIzaSyCuVnng4ikaLuQBaiIUF0KHyZtiBjkdizA",
+        authDomain: "friendspollapp.firebaseapp.com",
+        databaseURL: "https://friendspollapp.firebaseio.com",
+        storageBucket: "gs://friendspollapp.appspot.com"
+        };
+    firebase.initializeApp(config);
+     firebase.database().ref('users/123').set({
+    username: "tfytfty",
+    email: "email"
+  });
+ }
  render(){
     return (
         <View style={styles.wrapper} >
